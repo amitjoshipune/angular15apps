@@ -18,6 +18,8 @@ import { QscoreComponent } from './components/reports/admin/qscore/qscore.compon
 import { MytestsComponent } from './components/reports/tester/mytests/mytests.component';
 import { MyresultsComponent } from './components/reports/tester/myresults/myresults.component';
 import { MyaisComponent } from './components/reports/tester/myais/myais.component';
+import { UserComponent } from './components/user/user.component';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { MyaisComponent } from './components/reports/tester/myais/myais.componen
     QscoreComponent,
     MytestsComponent,
     MyresultsComponent,
-    MyaisComponent
+    MyaisComponent,
+    UserComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
