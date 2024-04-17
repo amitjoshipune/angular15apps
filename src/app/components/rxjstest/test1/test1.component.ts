@@ -82,7 +82,7 @@ combineLatest(source1$, source2$, source3$ ,source4$).subscribe(([value1, value2
         { name: 'Alice', age: 25 },
         { name: 'Bob', age: 35 }
       ]);
-      
+      /* This example of pluck rxjs operator */
       source$.pipe(
         pluck('name')
       ).subscribe((obj) => console.log(obj)); // Output: John, Alice, Bob
