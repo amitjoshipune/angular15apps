@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.css' ,'../../../app/app.component.css']
 })
 export class UserComponent {
+  userID:number = 10;
+  userStatus:string = 'Active';
 
+  getUserStatus =  () => {
+    return this.userStatus;
+  }
 }
