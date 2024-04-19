@@ -1,7 +1,15 @@
 <h3>users list</h3>
 <br>
-<button class="btn btn-primary" [disabled]="!allowNewUser">Add User</button>
+<div class="my-2">
+    <label>User Name</label>
+    <input type="text" class="form-control" (input)="onUpdateUser($event)" />
+</div>
+
+<button class="btn btn-primary" [disabled]="!allowNewUser"
+(click)="changeUserCreatedStatus()" >Add User</button>
 <div>{{allowNewUser}}</div>
+<div [attr.innerText]="allowNewUser"></div>
+<div>{{userCreatedStatus}}</div>
 <app-user></app-user>
 <app-user></app-user>
 <app-user></app-user>
