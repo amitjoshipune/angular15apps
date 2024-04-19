@@ -31,5 +31,6 @@ export class UsersComponent implements OnInit {
 
   onUpdateUser = (event:Event)=> {
     console.log(event);
+    //this.userName = ($any( event.target!)).value;
   }
 }
